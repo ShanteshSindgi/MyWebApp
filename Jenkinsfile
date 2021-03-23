@@ -7,6 +7,5 @@ def mvnHome = tool name: 'maven 3.6.3', type: 'maven'
 bat "${mvnHome}/bin/mvn package"
 }
 stage('Deploy to Tomcat'){
-deploy adapters: [tomcat9(credentialsId: 'b34b9fc2-9bba-4ca3-b4ec-bf2577f6b561', path: '', url: 'http://localhost:9090/')], contextPath: 'MyWebApp', onFailure: false, war: '**/*.war'
-}
+deploy adapters: [tomcat9(credentialsId: '013f1857-f9c5-4f75-8bd1-dc2d2150459c', path: '', url: 'http://localhost:9090/')], contextPath: 'MyWebApp', war: '**/*.war'}
 }
