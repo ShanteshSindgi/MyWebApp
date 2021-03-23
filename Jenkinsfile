@@ -3,7 +3,7 @@ stage('SCM Checkout'){
 git 'https://github.com/Sharvari1411/SpringWelcome.git'
 }
 stage('Compile-Package-create-war-file'){
-def mvnHome = tool name: 'maven 3.6.3', type: 'maven'
+def mvnHome = tool name: 'Maven 3.6', type: 'maven'
 bat "${mvnHome}/bin/mvn package"
 }
 stage('Deploy to Tomcat'){
