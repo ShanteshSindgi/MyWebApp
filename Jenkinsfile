@@ -1,8 +1,7 @@
 //dd
 node{
 stage('SCM Checkout'){
-  echo "hello"
-//git 'https://github.com/ShanteshSindgi/MyWebApp.git'
+  git 'https://github.com/ShanteshSindgi/MyWebApp'
 }
 stage('Compile-Package-create-war-file'){
 def mvnHome = tool name: 'Maven 3.6', type: 'maven'
