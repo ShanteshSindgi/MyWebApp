@@ -1,6 +1,6 @@
 node{
 stage('SCM Checkout'){
-git 'https://github.com/Sharvari1411/SpringWelcome.git'
+git 'https://github.com/ShanteshSindgi/MyWebApp.git'
 }
 stage('Compile-Package-create-war-file'){
 def mvnHome = tool name: 'Maven 3.6', type: 'maven'
