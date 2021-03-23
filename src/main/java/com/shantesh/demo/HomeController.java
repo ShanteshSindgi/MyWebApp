@@ -14,7 +14,7 @@ public class HomeController {
 	public String home(HttpServletRequest req)
 	{
 		String name=req.getParameter("name");
-		System.out.println("In home"+ name);
+		System.out.println("In home Hello"+ name);
 
 		return "home";
 	}
